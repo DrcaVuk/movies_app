@@ -2,7 +2,7 @@ import React from "react";
 
 import Modal from "../Modal/Modal";
 
-import classed from "./ErrorModal.module.css";
+import classed from "./ErrorModule.module.css";
 
 const ErrorModal = (props) => {
   return (

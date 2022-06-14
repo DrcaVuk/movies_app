@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../../assets/image/logo.svg";
-import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import "./MainNavigation.css";
 
@@ -19,13 +19,6 @@ const MainNavigation = props => {
         <Link to="/popular">
           <img src={logo} alt="logo" />
         </Link>
-        <button
-          src={() => {
-            props.setShowSearch(!props.showMenu);
-          }}
-        >
-          <AiOutlineSearch />
-        </button>
       </div>
       <ul className={showMenu ? "showMenu":""} onClick={() => setShowMenu(false)}>
         <li>

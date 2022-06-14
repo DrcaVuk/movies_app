@@ -25,7 +25,11 @@ export const useHttpClient = () => {
       })
       .catch((err) => {
         setIsLoading(false);
-        setError(err.respones.data.message);
+        if(axios.isCancel(err)) {
+          console.log(err.message)
+        } else {
+          setError(err.message);
+        }
         throw err;
       });
 

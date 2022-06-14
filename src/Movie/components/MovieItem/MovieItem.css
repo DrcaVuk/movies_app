@@ -52,6 +52,25 @@
     height: 25px;
 }
 
+.item button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.item .favorite {
+    color: gold
+}
+
+.item .delete { 
+    color: red
+}
+
+.item button svg {
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width:960px) {
     .item {
         width: 33.33%;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useHttpClient } from "../../shear/hook/http-hook";
-import { image_url } from "../../variable";
-import LoadingSpinner from "../../shear/components/LoadingSpinner/LoadingSpinner";
+import { useHttpClient } from "../../../shear/hook/http-hook";
+import { image_url } from "../../../variable";
+import LoadingSpinner from "../../../shear/components/LoadingSpinner/LoadingSpinner";
 
 import "./Movie.css";
 
